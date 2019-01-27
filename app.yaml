@@ -1,0 +1,17 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /view/css
+  static_dir: view/css
+- url: /view/css/images
+  static_dir: view/css/images
+- url: /view/fonts
+  static_dir: view/fonts
+- url: /view/images
+  static_dir: view/images
+- url: /view/js
+  static_dir: view/js
+- url: /.*
+  script: index.php
